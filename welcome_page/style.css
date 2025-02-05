@@ -1,0 +1,43 @@
+.italic{
+    font-style:italic;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+body{
+    text-align: center;
+}
+
+/*button{
+    margin: 30px;
+    padding: 3px 12px 3px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 0px solid;
+    outline: none;
+    background-color: #d9e8fb;
+    color: #4d4d87;
+}*/
+
+button{
+    width: 100px;
+    border: 2px solid #5EB8FD;
+    border-radius: 6px;
+    color: white;
+    padding: 4px 4px;
+    background-color: #096CB8;
+}
+
+button:hover{
+    background-color: #000;
+    cursor: pointer;
+    border-color: gray;
+}
+
+button:active{
+    background-color: #f55;
+    cursor: pointer;
+    border-color:#faa;
+}

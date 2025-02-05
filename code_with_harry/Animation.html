@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: rgb(28, 116, 171);
+        }
+        .box{
+            font-size: 23px;
+            text-align: center;
+            
+            background-color: rgb(230, 47, 31);
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation: ani1;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards;
+        }
+        .box2{
+            font-size: 23px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(230, 47, 31);
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation: rotation;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            animation-fill-mode: alternate;
+        }
+        @keyframes ani1 {
+            from{
+                width: 180px;
+            }
+            to{
+                width: 300px;
+            }
+        }
+        @keyframes rotation {
+            0%{
+                 top: 0px;
+                 left: 0px;
+            }
+            25%{
+                top: 0px;
+                left:250px
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 250px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is a box for Animation</div>
+    </div>
+    <br>
+    <div>
+        <div class="box2">This is a box for Animation</div>
+    </div>
+</body>
+</html>

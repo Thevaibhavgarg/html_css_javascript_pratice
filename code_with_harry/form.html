@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="/backend.php">
+      <fieldset>
+        <legend>Personal Information:</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <br /><br />
+        <label for="role">Role:</label>
+        <input type="text" name="Role" id="role" />
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <br /><br />
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" />
+        <br /><br />
+        <label for="bonus">Bonus:</label>
+        <input type="text" name="bonus" id="bonus" />
+        <br /><br />
+        <label for="eligible">Are you eligible?:</label>
+        <input type="checkbox" name="eligible" id="eligible" checked />
+        <br /><br />
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" />Male
+        <input type="radio" name="gender" />Female
+        <input type="radio" name="gender" />Other <br /><br />
+        <label for="write">Write about yourself:</label>
+        <br />
+        <textarea
+          name="write"
+          id="write"
+          wrap="soft"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </fieldset>
+      <br /><br />
+      <label for="car">Car</label>
+      <select name="car" id="car" autofocus>
+        <option value="1">Swift</option>
+        <option value="2">Audi</option>
+        <option value="3" selected>Farrari</option>
+      </select>
+      <br /><br />
+      <details>
+        <summary>Lorem ipsum</summary>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum laudantium officia natus laborum adipisci reprehenderit tempore neque assumenda possimus iusto.
+        </p>
+      </details>
+      <input type="submit" value="Submit Now" />
+      <input type="reset" value="Reset Now" />
+    </form>
+  </body>
+</html>

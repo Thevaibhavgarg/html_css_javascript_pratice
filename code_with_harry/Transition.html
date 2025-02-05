@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        #box {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            #circle{
+                display: none;
+            }
+            font-size: 23px;
+        }
+
+        #box:hover{
+            background-color: black;
+            height: 300px;
+            width: 350px;
+            border-radius: 50%;
+            font-size: 25px;
+            #box1{
+                display: none;
+            }
+            #circle{
+                display: block;
+            }
+            
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+            <p id="box1">This is a box</p>
+            <p id="circle">This is a circle</p>
+        </div>
+    </div>
+</body>
+</html>
